@@ -2,7 +2,6 @@
 
 int main(void)
 {
-    //puro CJNG
     float cel;
     float fah;
     printf("°F= ");
