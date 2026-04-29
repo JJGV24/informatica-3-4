@@ -9,7 +9,7 @@ int main(void)
 
 printf("item? \n= ");
 scanf("%d", &item);
-
+//no se porque no para :(
 printf("price? \n= ");
 scanf("%f", &price);
 
