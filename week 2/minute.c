@@ -2,17 +2,25 @@
 
 int main(void)
 {
-    int movruntime ;
+    int movruntimeh;
+    int movruntimem;
     int starttimeh;
     int startimem;
-    printf("How long is your movie in minute? \n= ");
-    scanf("%d",&movruntime);
+    int endth;
+    int endtm;
 
-    int min_t = movruntime*60;
-    printf("The movie is %d minutes long\n", min_t);
+    printf("How long is your movie in hr? \n= ");
+    scanf("%d:%d",&movruntimeh, &movruntimem);
 
-    printf("At what time are you starting it? \n= ");
-    scanf("%d""%d", &starttimeh, &startimem);
+    int min_t = movruntimeh*60+movruntimem;
+    printf("Movie running time (in minutes): %d\n", min_t);
 
+    printf("Starting time: \n= ");
+    scanf("%d:%d", &starttimeh, &startimem);
+
+    endth = min_t/60+starttimeh;
+    endtm = min_t%60+startimem;
+
+    printf("The movie will end at %d:%d \n", endth, endtm);
 
 }
